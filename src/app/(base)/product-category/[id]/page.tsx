@@ -6,9 +6,13 @@ interface PageProps {
   params: {
     id: string;
   };
+  searchParams: Record<string, string | string[] | undefined>;
 }
 
-export default function CategoryPage({ params }: PageProps) {
+export default async function CategoryPage() {
+  const params = {
+    id: "1",
+  };
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
