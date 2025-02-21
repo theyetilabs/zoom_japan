@@ -3,13 +3,7 @@ import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductInfo } from "@/components/product/ProductInfo";
 import { ProductTabs } from "@/components/product/ProductTabs";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ProductPage({ params }: PageProps) {
+export default function ProductPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8">
